@@ -1,11 +1,361 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <h1><%= title %></h1>
-    <p>Welcome to <%= title %></p>
-  </body>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./css/sample-view.css">
+
+
+    <title>View Sample</title>
+</head>
+<body>
+    <h1>Blockchain Sample View</h1>
+    <br>
+    <div id="map">
+       
+    </div>
+    <!--
+    time
+    max, min,
+    GPS-lat, GPS-lng
+    -->
+    <!--ul#block_list>(li>table>(tr.block_count>th{Count}+(td[colspan=2]{$}))+(tr.block_time>th{Time}+td[colspan=2]{$$$$ / $$ / $$ - $$ : $$ : $$})+(tr.block_cds>(th[rowspan=2]{CDS}+td{max}+td.block_cds_max{$$$$$}))+(tr>(td{min}+td.block_cds_min{$$$$$}))+(tr.block_gps>(th[rowspan=2]{GPS}+td{lng}+td.block_gps_lng{$$.$$$$$}))+(tr>td{lat}+td.block_gps_lat{$$.$$$$$}))*11-->
+    <div>
+    <ul id="block_list">
+        <li>
+            <table>
+                <tr class="block_count">
+                    <th>Count</th>
+                    <td colspan="2">1</td>
+                </tr>
+                <tr class="block_time">
+                    <th>Time</th>
+                    <td colspan="2">0001 / 01 / 01 - 01 : 01 : 01</td>
+                </tr>
+                <tr class="block_cds">
+                    <th rowspan="2">CDS</th>
+                    <td>max</td>
+                    <td class="block_cds_max">00001</td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td class="block_cds_min">00001</td>
+                </tr>
+                <tr class="block_gps">
+                    <th rowspan="2">GPS</th>
+                    <td>lng</td>
+                    <td class="block_gps_lng">126.570667</td>
+                </tr>
+                <tr>
+                    <td>lat</td>
+                    <td class="block_gps_lat">33.450701</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <table>
+                <tr class="block_count">
+                    <th>Count</th>
+                    <td colspan="2">2</td>
+                </tr>
+                <tr class="block_time">
+                    <th>Time</th>
+                    <td colspan="2">0002 / 02 / 02 - 02 : 02 : 02</td>
+                </tr>
+                <tr class="block_cds">
+                    <th rowspan="2">CDS</th>
+                    <td>max</td>
+                    <td class="block_cds_max">00002</td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td class="block_cds_min">00002</td>
+                </tr>
+                <tr class="block_gps">
+                    <th rowspan="2">GPS</th>
+                    <td>lng</td>
+                    <td class="block_gps_lng">126.570667</td>
+                </tr>
+                <tr>
+                    <td>lat</td>
+                    <td class="block_gps_lat">33.451701</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <table>
+                <tr class="block_count">
+                    <th>Count</th>
+                    <td colspan="2">3</td>
+                </tr>
+                <tr class="block_time">
+                    <th>Time</th>
+                    <td colspan="2">0003 / 03 / 03 - 03 : 03 : 03</td>
+                </tr>
+                <tr class="block_cds">
+                    <th rowspan="2">CDS</th>
+                    <td>max</td>
+                    <td class="block_cds_max">00003</td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td class="block_cds_min">00003</td>
+                </tr>
+                <tr class="block_gps">
+                    <th rowspan="2">GPS</th>
+                    <td>lng</td>
+                    <td class="block_gps_lng">126.570667</td>
+                </tr>
+                <tr>
+                    <td>lat</td>
+                    <td class="block_gps_lat">33.452701</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <table>
+                <tr class="block_count">
+                    <th>Count</th>
+                    <td colspan="2">4</td>
+                </tr>
+                <tr class="block_time">
+                    <th>Time</th>
+                    <td colspan="2">0004 / 04 / 04 - 04 : 04 : 04</td>
+                </tr>
+                <tr class="block_cds">
+                    <th rowspan="2">CDS</th>
+                    <td>max</td>
+                    <td class="block_cds_max">00004</td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td class="block_cds_min">00004</td>
+                </tr>
+                <tr class="block_gps">
+                    <th rowspan="2">GPS</th>
+                    <td>lng</td>
+                    <td class="block_gps_lng">126.570667</td>
+                </tr>
+                <tr>
+                    <td>lat</td>
+                    <td class="block_gps_lat">33.453701</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <table>
+                <tr class="block_count">
+                    <th>Count</th>
+                    <td colspan="2">5</td>
+                </tr>
+                <tr class="block_time">
+                    <th>Time</th>
+                    <td colspan="2">0005 / 05 / 05 - 05 : 05 : 05</td>
+                </tr>
+                <tr class="block_cds">
+                    <th rowspan="2">CDS</th>
+                    <td>max</td>
+                    <td class="block_cds_max">00005</td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td class="block_cds_min">00005</td>
+                </tr>
+                <tr class="block_gps">
+                    <th rowspan="2">GPS</th>
+                    <td>lng</td>
+                    <td class="block_gps_lng">05.00005</td>
+                </tr>
+                <tr>
+                    <td>lat</td>
+                    <td class="block_gps_lat">05.00005</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <table>
+                <tr class="block_count">
+                    <th>Count</th>
+                    <td colspan="2">6</td>
+                </tr>
+                <tr class="block_time">
+                    <th>Time</th>
+                    <td colspan="2">0006 / 06 / 06 - 06 : 06 : 06</td>
+                </tr>
+                <tr class="block_cds">
+                    <th rowspan="2">CDS</th>
+                    <td>max</td>
+                    <td class="block_cds_max">00006</td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td class="block_cds_min">00006</td>
+                </tr>
+                <tr class="block_gps">
+                    <th rowspan="2">GPS</th>
+                    <td>lng</td>
+                    <td class="block_gps_lng">06.00006</td>
+                </tr>
+                <tr>
+                    <td>lat</td>
+                    <td class="block_gps_lat">06.00006</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <table>
+                <tr class="block_count">
+                    <th>Count</th>
+                    <td colspan="2">7</td>
+                </tr>
+                <tr class="block_time">
+                    <th>Time</th>
+                    <td colspan="2">0007 / 07 / 07 - 07 : 07 : 07</td>
+                </tr>
+                <tr class="block_cds">
+                    <th rowspan="2">CDS</th>
+                    <td>max</td>
+                    <td class="block_cds_max">00007</td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td class="block_cds_min">00007</td>
+                </tr>
+                <tr class="block_gps">
+                    <th rowspan="2">GPS</th>
+                    <td>lng</td>
+                    <td class="block_gps_lng">07.00007</td>
+                </tr>
+                <tr>
+                    <td>lat</td>
+                    <td class="block_gps_lat">07.00007</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <table>
+                <tr class="block_count">
+                    <th>Count</th>
+                    <td colspan="2">8</td>
+                </tr>
+                <tr class="block_time">
+                    <th>Time</th>
+                    <td colspan="2">0008 / 08 / 08 - 08 : 08 : 08</td>
+                </tr>
+                <tr class="block_cds">
+                    <th rowspan="2">CDS</th>
+                    <td>max</td>
+                    <td class="block_cds_max">00008</td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td class="block_cds_min">00008</td>
+                </tr>
+                <tr class="block_gps">
+                    <th rowspan="2">GPS</th>
+                    <td>lng</td>
+                    <td class="block_gps_lng">08.00008</td>
+                </tr>
+                <tr>
+                    <td>lat</td>
+                    <td class="block_gps_lat">08.00008</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <table>
+                <tr class="block_count">
+                    <th>Count</th>
+                    <td colspan="2">9</td>
+                </tr>
+                <tr class="block_time">
+                    <th>Time</th>
+                    <td colspan="2">0009 / 09 / 09 - 09 : 09 : 09</td>
+                </tr>
+                <tr class="block_cds">
+                    <th rowspan="2">CDS</th>
+                    <td>max</td>
+                    <td class="block_cds_max">00009</td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td class="block_cds_min">00009</td>
+                </tr>
+                <tr class="block_gps">
+                    <th rowspan="2">GPS</th>
+                    <td>lng</td>
+                    <td class="block_gps_lng">09.00009</td>
+                </tr>
+                <tr>
+                    <td>lat</td>
+                    <td class="block_gps_lat">09.00009</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <table>
+                <tr class="block_count">
+                    <th>Count</th>
+                    <td colspan="2">10</td>
+                </tr>
+                <tr class="block_time">
+                    <th>Time</th>
+                    <td colspan="2">0010 / 10 / 10 - 10 : 10 : 10</td>
+                </tr>
+                <tr class="block_cds">
+                    <th rowspan="2">CDS</th>
+                    <td>max</td>
+                    <td class="block_cds_max">00010</td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td class="block_cds_min">00010</td>
+                </tr>
+                <tr class="block_gps">
+                    <th rowspan="2">GPS</th>
+                    <td>lng</td>
+                    <td class="block_gps_lng">10.00010</td>
+                </tr>
+                <tr>
+                    <td>lat</td>
+                    <td class="block_gps_lat">10.00010</td>
+                </tr>
+            </table>
+        </li>
+        <li>
+            <table>
+                <tr class="block_count">
+                    <th>Count</th>
+                    <td colspan="2">11</td>
+                </tr>
+                <tr class="block_time">
+                    <th>Time</th>
+                    <td colspan="2">0011 / 11 / 11 - 11 : 11 : 11</td>
+                </tr>
+                <tr class="block_cds">
+                    <th rowspan="2">CDS</th>
+                    <td>max</td>
+                    <td class="block_cds_max">00011</td>
+                </tr>
+                <tr>
+                    <td>min</td>
+                    <td class="block_cds_min">00011</td>
+                </tr>
+                <tr class="block_gps">
+                    <th rowspan="2">GPS</th>
+                    <td>lng</td>
+                    <td class="block_gps_lng">11.00011</td>
+                </tr>
+                <tr>
+                    <td>lat</td>
+                    <td class="block_gps_lat">11.00011</td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b3af9e350eb4379ac00f1f2bf6c83648"></script>
+    <script type="text/javascript" src="js/sample-view.js"></script>
+  </div>
+</body>
 </html>
